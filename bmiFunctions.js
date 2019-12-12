@@ -1,4 +1,4 @@
-function bmiCalc(cm,kg,calculateWHR,gender,waist,hip,failcallback,successcallback){
+function bmiCalc(cm, kg, calculateWHR, gender, waist, hip, failcallback, successcallback) {
     var m = (parseInt(cm, 10) / 100);
 
     var kg = kg;
@@ -44,7 +44,7 @@ function bmiCalc(cm,kg,calculateWHR,gender,waist,hip,failcallback,successcallbac
             }
         }
 
-        var completeObj ={
+        var completeObj = {
             bmi: bmi,
             bmiGroup: bmiGroup,
             whr: whr,
@@ -61,7 +61,7 @@ function bmiCalc(cm,kg,calculateWHR,gender,waist,hip,failcallback,successcallbac
 }
 
 function calcBmi(weight, height) {
-    
+
 
 
 }
@@ -81,7 +81,7 @@ function getwhrClassification(whr) {
 module.exports = {
     calcBmi: calcBmi,
     getBmiGroup: getBmiGroup,
-    calcWhr: calcWhr, 
+    calcWhr: calcWhr,
     getwhrClassification: getwhrClassification,
-    bmiCalc:bmiCalc
+    bmiCalc: bmiCalc
 }

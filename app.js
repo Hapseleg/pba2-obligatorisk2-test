@@ -13,13 +13,13 @@ app.get("/", (req, res) => {
 });
 
 app.get("/result", (req, res) => {
-    require('./bmiFunctions.js').bmiCalc(req.query.cm,req.query.kg,req.query.calculateWHR,req.query.gender,req.query.waist,req.query.hip,
-        function(){
+    require('./bmiFunctions.js').bmiCalc(req.query.cm, req.query.kg, req.query.calculateWHR, req.query.gender, req.query.waist, req.query.hip,
+        function () {
             res.redirect("/");
-    },
-    function(obj){
-        res.render("pages/result", obj);
-    })
+        },
+        function (obj) {
+            res.render("pages/result", obj);
+        })
     // var m = (parseInt(req.query.cm, 10) / 100);
     // // console.log(req.query)
 

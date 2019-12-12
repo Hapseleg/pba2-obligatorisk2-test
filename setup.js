@@ -17,9 +17,9 @@ module.exports = async function() {
   fs.writeFileSync(path.join(DIR, 'wsEndpoint'), browser.wsEndpoint())
 
   // ------
-  // let hmm = [
-  //   'https://www.youtube.com/watch?v=I_izvAbhExY',
-  // ]
-  // page = await browser.newPage()
-  // await page.goto(hmm[0]);
+  let hmm = [
+    'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  ]
+  page = await browser.newPage()
+  await page.goto(hmm[0]);
 }
