@@ -1,0 +1,29 @@
+<% include ../partials/header %>
+
+<div class="alert alert-success">
+    <strong>Note:</strong>
+    Your body mass index is: 
+    <strong id="bmi"><%= Math.round(bmi * 100) / 100 %></strong>
+</div>
+
+<div class="alert alert-success">
+    <strong>Note:</strong>
+    Your body mass index group is: 
+    <strong id="bmiGroup"><%= bmiGroup %></strong>
+</div>
+
+<% if (whr) { %>
+    <div class="alert alert-success">
+        <strong>Note:</strong>
+        Your WHR is:
+        <strong id="whr"><%= Math.round(whr * 100) / 100 %></strong>
+        <br>
+        <strong>Note:</strong>
+        Your WHR Classification is:
+        <strong id="whrClassification"><%= whrClassification %></strong>
+    </div>
+<% } %>
+
+
+
+<% include ../partials/footer %>
