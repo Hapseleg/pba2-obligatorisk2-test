@@ -102,6 +102,3 @@ dist
 
 # TernJS port file
 .tern-port
-
-./test-obligatorisk-opgave/node_modules
-./jest-puppeteer-example/node_modules
